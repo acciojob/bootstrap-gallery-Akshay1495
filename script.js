@@ -16,20 +16,22 @@ $(document).ready(function(){
 
   var cardRow = $("#cardRow");
 
-  for (var i = 0; i < totalImages; i++) {
-    var cardHTML = `
-      <div class="col-md-4 mb-4">
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <img src="${images[i]}" class="card-img-top" alt="Image ${i+1}" data-index="${i}">
-          <div class="card-body">
-            <h6 class="card-title">Card ${i+1}</h6>
-            <p class="card-text">Details about Image ${i+1}.</p>
-          </div>
+	
+for (var i = 0; i < totalImages; i++) {
+  var cardHTML = `
+    <div class="col-md-4 mb-4">
+      <div class="card" data-toggle="modal" data-target="#exampleModal">
+        <img src="${images[i]}" class="card-img-top" alt="Image ${i+1}" data-index="${i}">
+        <div class="card-body">
+          <h6 class="card-title">Card ${i+1}</h6>
+          <p class="card-text">Details about Image ${i+1}.</p>
         </div>
       </div>
-    `;
-    cardRow.append(cardHTML);
-  }
+    </div>
+  `;
+  cardRow.append(cardHTML);
+}
+
 
   // Lightbox functionality
   $(".card").click(function() {
