@@ -1,7 +1,3 @@
-describe('Gallery Test', () => {
-  it('should display at least six cards and implement lightbox effect', () => {
-    cy.visit('index.html');
-
     // Check for at least six cards and implement lightbox effect
     cy.get('.card').should('have.length.at.least', 6).each(($card) => {
       cy.wrap($card).within(() => {
