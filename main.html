@@ -3,14 +3,35 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="row" id="cardRow">
+      <!-- Cards will be dynamically added here -->
+    </div>
+  </div>
 
+	
+<!-- Modal for lightbox effect -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" class="img-fluid" id="lightboxImage" alt="Placeholder Image">
+        <button type="button" class="btn btn-light" id="lightboxPrev"><</button>
+        <button type="button" class="btn btn-light" id="lightboxNext">></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
